@@ -4,7 +4,7 @@ class Userinfo {
     }
 
     async ip(){
-        let res = await(await fetch('https://api.ipify.org?format=json'))
+        let res = await(await fetch('http://ip-api.com/json/'))
         let data = await res.json();
         return data;
     }
