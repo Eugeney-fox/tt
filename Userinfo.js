@@ -4,7 +4,7 @@ class Userinfo {
     }
 
     async ip(){
-        let res = await(await fetch('http://ip-api.com/json/?fields=61439'))
+        let res = await(await fetch('https://ip-api.com/json/?fields=61439'))
         let data = await res.json();
         return data;
     }
